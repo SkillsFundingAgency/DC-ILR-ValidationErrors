@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <CodeAnalysisRuleSet>ESFA.DC.ValidationErrors.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <CodeAnalysisRuleSet>ESFA.DC.ValidationErrors.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ESFA.DC.ILR.ValidationErrors.Interface" Version="0.1.2-beta0001" />
+    <PackageReference Include="ESFA.DC.IO.Interfaces" Version="0.1.2-beta0001" />
+    <PackageReference Include="ESFA.DC.Logging" Version="0.1.1-beta0001" />
+    <PackageReference Include="ESFA.DC.Serialization.Interfaces" Version="0.1.4-beta0001" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.0-beta007" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ESFA.DC.ILR.ValidationService.IO.Model">
+      <HintPath>..\..\..\DC-ILR-1819-ValidationService\src\ESFA.DC.ILR.ValidationService.IO.Model\bin\Debug\netstandard2.0\ESFA.DC.ILR.ValidationService.IO.Model.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
