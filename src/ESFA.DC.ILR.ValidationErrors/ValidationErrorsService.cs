@@ -8,7 +8,7 @@ using ESFA.DC.IO.Interfaces;
 using ESFA.DC.Logging.Interfaces;
 using ESFA.DC.Serialization.Interfaces;
 
-namespace ESFA.DC.ValidationErrors
+namespace ESFA.DC.ILR.ValidationErrors
 {
     public class ValidationErrorsService : IValidationErrorsService
     {
