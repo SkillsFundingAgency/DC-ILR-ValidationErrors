@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ESFA.DC.ILR.ValidationService.IO.Model
+﻿namespace ESFA.DC.ILR.ValidationErrors.Interface.Models
 {
     public class ValidationErrorMessageLookup
     {
